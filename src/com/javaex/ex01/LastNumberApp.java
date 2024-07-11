@@ -1,6 +1,8 @@
 package com.javaex.ex01;
 
 public class LastNumberApp {
+	
+	//LastNumberApp.java 코드 실행시 아래와 같이 예외가 발생합니다.
 
 	public static void main(String[] args) {
 
@@ -20,8 +22,15 @@ public class LastNumberApp {
 		int result;
 		
 		//아래부분을 try~catch문을 사용하여 수정하세요
-		result = intArray[3];
-		System.out.println(result);
+		try {
+			for(int i=0; i<=intArray.length; i++) {
+				result = intArray[3];
+				System.out.println(result);
+			}
+		}catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("배열의 범위를 벗어나 강제 종료합니다.");
+		}
+		
 		
 	}
 

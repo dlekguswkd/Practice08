@@ -9,6 +9,11 @@ public class Sub {
     }
 
     public int calculate() {
+
+    	int result =0;
+    	
+    	return result;
+    	
     }
 
 }
