@@ -15,6 +15,18 @@ public class PointApp {
 		System.out.println(p4 == p1);		
 		System.out.println(p1.equals(p2));
 		System.out.println(p4.equals(p1));
+		
+		
+		/*
+		 결과값예상
+		 false	//주소값을 묻는것
+		 false
+		 false
+		 true
+		 true -> false 당분간의 주소값을 묻는것 다르다.
+		 true 
+		 */
+		
 	}
 
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CalcApp {
 	
 	//계산기 본체 클래스는 CalcApp 입니다. 계산기 실행 결과는 다음과 같습니다.
+	//도움받음 다시해보기
 
     public static void main(String[] args) {
     	
@@ -13,10 +14,12 @@ public class CalcApp {
     	System.out.print(">> ");
     	String n = sc.nextLine();	//입력받은거
     	
-    	String[] s =n.split(" ");
+    	String[] s =n.split(" ");	//띄어쓰기로 나누기
     	
-    	
+    	setValue(n[o],n[2]);
 
+    	calculate()
+    	
     	
     	sc.close();
     	
